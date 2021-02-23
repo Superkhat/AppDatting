@@ -1,35 +1,8 @@
 # AppDatting
 ## Một số hình ảnh của app 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-</style>
-</head>
-<body>
 
 <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
+  <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/supertato-53d59.appspot.com/o/login.PNG?alt=media&token=c4d2fdd5-7e77-4d0f-a33a-26e6e46e4a06">
     <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
   </a>
   <div class="desc">Add a description of the image here</div>
