@@ -1,34 +1,62 @@
 # AppDatting
 ## Một số hình ảnh của app 
-<img src="https://firebasestorage.googleapis.com/v0/b/supertato-53d59.appspot.com/o/bg_splash.PNG?alt=media&token=a28eecdd-2d6e-4bcf-bcae-9c764828919c"> <img src="https://firebasestorage.googleapis.com/v0/b/supertato-53d59.appspot.com/o/login.PNG?alt=media&token=c4d2fdd5-7e77-4d0f-a33a-26e6e46e4a06"> <img src="https://firebasestorage.googleapis.com/v0/b/supertato-53d59.appspot.com/o/infor.PNG?alt=media&token=17a2a8de-b1bf-47fe-8628-73dfe1a7ec79">
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
 <body>
 
-<h2>Basic HTML Table</h2>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
-</table>
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
 </body>
+</html>
+
 </html>
