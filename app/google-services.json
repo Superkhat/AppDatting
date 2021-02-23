@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "706510885658",
+    "project_id": "supertato-53d59",
+    "storage_bucket": "supertato-53d59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706510885658:android:cf32e8fad32a7e77dcd2a3",
+        "android_client_info": {
+          "package_name": "vn.com.supertao.datting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706510885658-a4aseq2gone9vcabk3ehred0nmijc13m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.com.supertao.datting",
+            "certificate_hash": "fa1be7852c924a2d103b2dae2300e48af249a010"
+          }
+        },
+        {
+          "client_id": "706510885658-5kt8n61g28fpjuuovqsvq7epspp5pn4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKurenlOKJaLWXMr6PbVSh7ULPPc6UCIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706510885658-5kt8n61g28fpjuuovqsvq7epspp5pn4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

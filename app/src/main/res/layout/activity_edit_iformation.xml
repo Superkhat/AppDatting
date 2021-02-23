@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.RegisterActivity">
+
+    <include
+        android:id="@+id/tbHeader"
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/tvNameApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="14dp"
+        android:text="Chỉnh sửa thông tin cá nhân"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_logo_24dp"
+        app:layout_constraintStart_toEndOf="@+id/tvNameApp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_boder"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_ll_welcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBack">
+
+            <EditText
+                android:drawableLeft="@drawable/ic_person"
+                android:id="@+id/edtNameUserEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Name"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_cake_black"
+                android:padding="@dimen/padding_content"
+                android:drawablePadding="2dp"
+                android:text="@string/Date_of_birth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_register" />
+
+            <EditText
+                android:id="@+id/cldDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+
+            <EditText
+                android:drawablePadding="2dp"
+                android:id="@+id/edtPhone"
+                android:drawableLeft="@drawable/ic_call_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Phone_number"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                app:counterEnabled="true"
+                app:counterMaxLength="11" />
+
+            <TextView
+                android:drawablePadding="2dp"
+                android:drawableLeft="@drawable/ic_hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Hobbies"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/cbXemPhim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem phim"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/cbChoiGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chơi game"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/cbDuLich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Du lịch"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:textSize="18sp"
+                android:id="@+id/cbTheThao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thể thao"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:textSize="18sp"
+                android:id="@+id/cbKhac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khác"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:textSize="18sp"
+                android:id="@+id/edtChamNgonSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Châm ngôn sống"
+                android:drawablePadding="2dp"
+                android:drawableLeft="@drawable/ic_cns"
+                android:inputType="textImeMultiLine"
+                android:textColorHint="@color/black"
+                 />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:background="@drawable/btn_up_image"
+        android:id="@+id/btnCancel"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="Hủy"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:background="@drawable/btn_up_image"
+        android:id="@+id/btnSave"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="Lưu"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

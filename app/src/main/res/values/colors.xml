@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white_green">#DDF3F0</color>
+    <color name="pink">#db4653</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_text">#a9a9a9</color>
+    <color name="black_text">#434343</color>
+    <color name="pink_nhat">#fdade0</color>
+    <color name="gray">#DCD6D7</color>
+    <color name="green">#2FEA36</color>
+    <color name="black">#131212</color>
+    <color name="blue_Dark_Dark">#1377C6</color>
+    <color name="blue_Dark">#2196F3</color>
+    <color name="blue">#4DAAD5</color>
+    <color name="message_pink">#EC437C</color>
+    <color name="message_white">#EFD6DE</color>
+</resources>

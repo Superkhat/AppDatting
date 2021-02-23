@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo">50dp</dimen>
+    <dimen name="magintop_logo">30dp</dimen>
+    <dimen name="padding_ll_welcome">20dp</dimen>
+    <dimen name="size_text_welcome">22sp</dimen>
+    <dimen name="margin_left_welcome">38dp</dimen>
+    <dimen name="size_btn_back">32dp</dimen>
+    <dimen name="text_size_register">16sp</dimen>
+    <dimen name="padding_content">6dp</dimen>
+    <dimen name="sizeIamge">100dp</dimen>
+</resources>

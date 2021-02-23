@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llHearder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/image"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:id="@+id/ivImageUerDiaryStatus"
+                style="@style/image"
+                android:src="@drawable/ic_person" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:background="@drawable/btn_up_image"
+            android:id="@+id/btnSatus"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:layout_marginStart="4dp"
+            android:text="Bạn đang nghĩ gì!"
+            android:drawableRight="@drawable/image"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+<ProgressBar
+    android:id="@+id/pbLoading"
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:visibility="invisible"
+style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintTop_toBottomOf="@id/llHearder"
+    android:background="@color/white"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDiary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbLoading" />
+</androidx.constraintlayout.widget.ConstraintLayout>
